@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <title>المنصة العلمية | م.م. محمود عبد الله عطية</title>
+    <style>
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #e9ecef; margin: 0; padding: 0; color: #333; }
+        .top-bar { background: #004a99; height: 10px; }
+        .header { background: white; padding: 20px 50px; border-bottom: 1px solid #ccc; display: flex; justify-content: space-between; align-items: center; }
+        .header h1 { color: #004a99; margin: 0; font-size: 28px; }
+        .main-content { max-width: 1200px; margin: 30px auto; display: flex; gap: 20px; padding: 0 20px; }
+        .sidebar { flex: 1; background: white; padding: 20px; border-radius: 4px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); height: fit-content; border-top: 4px solid #004a99; }
+        .sidebar img { width: 100%; border-radius: 4px; margin-bottom: 15px; border: 1px solid #ddd; }
+        .sidebar h2 { color: #004a99; font-size: 20px; margin-bottom: 10px; border-bottom: 1px solid #eee; padding-bottom: 10px; }
+        .sidebar p { font-size: 14px; line-height: 1.6; margin: 5px 0; }
+        .content-area { flex: 3; }
+        .subject-card { background: white; padding: 20px; border-radius: 4px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); margin-bottom: 25px; border-top: 4px solid #004a99; }
+        .subject-title { color: #004a99; border-bottom: 2px solid #004a99; padding-bottom: 10px; margin-bottom: 20px; font-size: 22px; }
+        table { width: 100%; border-collapse: collapse; background: white; }
+        th { background-color: #f8f9fa; color: #004a99; border: 1px solid #dee2e6; padding: 12px; font-size: 15px; }
+        td { border: 1px solid #dee2e6; padding: 10px; text-align: center; font-size: 14px; }
+        tr:nth-child(even) { background-color: #fafafa; }
+        .download-btn { background-color: #004a99; color: white; text-decoration: none; padding: 5px 15px; border-radius: 3px; font-size: 12px; }
+        .footer { text-align: center; padding: 20px; color: #777; font-size: 13px; margin-top: 40px; border-top: 1px solid #ccc; }
+    </style>
+</head>
+<body>
+<div class="top-bar"></div>
+<div class="header">
+    <h1>المنصة العلمية للأستاذ محمود عبد الله عطية</h1>
+    <img src="https://upload.wikimedia.org/wikipedia/ar/thumb/0/00/Logo_of_Middle_Euphrates_University.png/200px-Logo_of_Middle_Euphrates_University.png" alt="شعار الجامعة" style="height: 60px;">
+</div>
+<div class="main-content">
+    <div class="sidebar">
+        <img src="mahmoud.jpg" alt="م.م. محمود عبد الله">
+        <h2>عن الأستاذ</h2>
+        <p><strong>الاسم:</strong> محمود عبد الله عطيه الشورتاني</p>
+        <p><strong>الدرجة العلمية:</strong> مدرس مساعد</p>
+        <p><strong>التخصص:</strong> تقنيات المعلومات والمكتبات</p>
+        <p><strong>جهة الانتساب:</strong> الجامعة التقنية الوسطى - معهد الإدارة الرصافة</p>
+    </div>
+    <div class="content-area">
+        <div class="subject-card">
+            <div class="subject-title">الفصل الأول: المستودعات الرقمية</div>
+            <table>
+                <thead><tr><th>الأسبوع</th><th>عنوان المحاضرة</th><th>المادة</th></tr></thead>
+                <tbody>
+                    <tr><td>1</td><td>مفهوم وأهداف المستودعات</td><td><a href="pdf.1.pdf" class="download-btn">تحميل</a></td></tr>
+                    <tr><td>2</td><td>تصنيف المستودعات</td><td><a href="pdf.2.pdf" class="download-btn">تحميل</a></td></tr>
+                    <tr><td>3</td><td>مراحل التطور</td><td><a href="pdf.3.pdf" class="download-btn">تحميل</a></td></tr>
+                    <tr><td>11</td><td>نظام Greenstone</td><td><a href="pdf.11.pdf" class="download-btn">تحميل</a></td></tr>
+                    <tr><td>12</td><td>نظام Dspace</td><td><a href="pdf.12.pdf" class="download-btn">تحميل</a></td></tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+<div class="footer">جميع الحقوق محفوظة © 2026</div>
+</body>
+</html>
