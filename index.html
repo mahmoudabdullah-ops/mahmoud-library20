@@ -8,28 +8,21 @@
         .top-bar { background: #004a99; height: 10px; }
         .header { background: white; padding: 20px 50px; border-bottom: 1px solid #ccc; display: flex; justify-content: space-between; align-items: center; }
         .header h1 { color: #004a99; margin: 0; font-size: 28px; }
-        
         .main-content { max-width: 1200px; margin: 30px auto; display: flex; gap: 20px; padding: 0 20px; }
-        
-        /* الجانب الأيمن: معلومات الأستاذ */
         .sidebar { flex: 1; background: white; padding: 20px; border-radius: 4px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); height: fit-content; border-top: 4px solid #004a99; }
         .sidebar img { width: 100%; border-radius: 4px; margin-bottom: 15px; border: 1px solid #ddd; }
         .sidebar h2 { color: #004a99; font-size: 20px; margin-bottom: 10px; border-bottom: 1px solid #eee; padding-bottom: 10px; }
         .sidebar p { font-size: 14px; line-height: 1.6; margin: 5px 0; }
-        
-        /* الجانب الأيسر: المحاضرات */
         .content-area { flex: 3; }
         .subject-card { background: white; padding: 20px; border-radius: 4px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); margin-bottom: 25px; border-top: 4px solid #004a99; }
-        .subject-title { color: #004a99; border-bottom: 2px solid #004a99; padding-bottom: 10px; margin-bottom: 20px; font-size: 22px; display: flex; align-items: center; }
-        
-        table { width: 100%; border-collapse: collapse; background: white; }
+        .subject-title { color: #004a99; border-bottom: 2px solid #004a99; padding-bottom: 10px; margin-bottom: 20px; font-size: 22px; }
+        table { width: 100%; border-collapse: collapse; background: white; margin-bottom: 15px; }
         th { background-color: #f8f9fa; color: #004a99; border: 1px solid #dee2e6; padding: 12px; font-size: 15px; }
         td { border: 1px solid #dee2e6; padding: 10px; text-align: center; font-size: 14px; }
         tr:nth-child(even) { background-color: #fafafa; }
-        
-        .download-btn { background-color: #004a99; color: white; text-decoration: none; padding: 5px 15px; border-radius: 3px; font-size: 12px; transition: 0.3s; }
-        .download-btn:hover { background-color: #003366; }
-        
+        .download-btn { background-color: #004a99; color: white; text-decoration: none; padding: 6px 12px; border-radius: 3px; font-size: 12px; display: inline-block; cursor: pointer; border: none; }
+        .quiz-item { background: #fffbe6; padding: 15px; border-radius: 5px; border: 1px solid #ffe58f; margin-bottom: 10px; text-align: right; }
+        .ans { display: none; color: #28a745; font-weight: bold; margin-top: 10px; background: #f6ffed; padding: 8px; border: 1px solid #b7eb8f; }
         .footer { text-align: center; padding: 20px; color: #777; font-size: 13px; margin-top: 40px; border-top: 1px solid #ccc; }
     </style>
 </head>
@@ -46,81 +39,62 @@
         <img src="mahmoud.jpg.jpg" alt="م.م. محمود عبد الله">
         <h2>عن الأستاذ</h2>
         <p><strong>الاسم:</strong> محمود عبد الله عطيه الشورتاني</p>
-        <p><strong>الدرجة العلمية:</strong> مدرس مساعد</p>
+        <p><strong>الدرجة:</strong> مدرس مساعد</p>
         <p><strong>التخصص:</strong> تقنيات المعلومات والمكتبات</p>
-        <p><strong>جهة الانتساب:</strong> الجامعة التقنية الوسطى - معهد الإدارة الرصافة</p>
-        <p><strong>البريد:</strong> mhmwdbdallhtyt386@gmail.com</p>
+        <p><strong>الجهة:</strong> الجامعة التقنية الوسطى - معهد الإدارة الرصافة</p>
     </div>
 
     <div class="content-area">
-        
         <div class="subject-card">
-            <div class="subject-title">الفصل الأول: المستودعات الرقمية (Digital Repositories)</div>
+            <div class="subject-title">الفصل الأول: المستودعات الرقمية</div>
             <table>
-                <thead>
-                    <tr>
-                        <th width="15%">الأسبوع</th>
-                        <th width="65%">عنوان المحاضرة</th>
-                        <th width="20%">المادة العلمية</th>
-                    </tr>
-                </thead>
+                <thead><tr><th>الأسبوع</th><th>عنوان المحاضرة</th><th>المادة</th></tr></thead>
                 <tbody>
-                    <tr><td>الأسبوع 1</td><td>مفهوم وأهداف وأهمية المستودعات الرقمية</td><td><a href="files/s1/pdf.1.pdf" class="download-btn">تحميل PDF</a></td></tr>
-                    <tr><td>الأسبوع 2</td><td>تصنيف المستودعات الرقمية وخصائصها</td><td><a href="files/s1/pdf.2.pdf" class="download-btn">تحميل PDF</a></td></tr>
-                    <tr><td>الأسبوع 3</td><td>مراحل تطور وأسباب ظهور المستودعات الرقمية</td><td><a href="files/s1/pdf.3.pdf" class="download-btn">تحميل PDF</a></td></tr>
-                    <tr><td>الأسبوع 4</td><td>أنواع المستودعات الرقمية ومتطلبات إنشائها</td><td><a href="files/s1/pdf.4.pdf" class="download-btn">تحميل PDF</a></td></tr>
-                    <tr><td>الأسبوع 5</td><td>نماذج عالمية (Aalto, Huddersfield, Queensland)</td><td><a href="files/s1/pdf.5.pdf" class="download-btn">تحميل PDF</a></td></tr>
-                    <tr><td>الأسبوع 6</td><td>نماذج عربية للمستودعات الرقمية</td><td><a href="files/s1/pdf.6.pdf" class="download-btn">تحميل PDF</a></td></tr>
-                    <tr><td>الأسبوع 7</td><td>المستودعات الرقمية في العراق</td><td><a href="files/s1/pdf.7.pdf" class="download-btn">تحميل PDF</a></td></tr>
-                    <tr><td>الأسبوع 8</td><td>نماذج في مجال المكتبات (مكتبة الإسكندرية و LIS)</td><td><a href="files/s1/pdf.8.pdf" class="download-btn">تحميل PDF</a></td></tr>
-                    <tr><td>الأسبوع 9</td><td>نظم بناء المستودعات الرقمية وأنواعها</td><td><a href="files/s1/pdf.9.pdf" class="download-btn">تحميل PDF</a></td></tr>
-                    <tr><td>الأسبوع 10</td><td>نظام Greenstone: المميزات والخصائص</td><td><a href="files/s1/pdf.10.pdf" class="download-btn">تحميل PDF</a></td></tr>
-                    <tr><td>الأسبوع 11</td><td>مراحل بناء المستودع الرقمي بنظام Greenstone</td><td><a href="files/s1/pdf.11.pdf" class="download-btn">تحميل PDF</a></td></tr>
-                    <tr><td>الأسبوع 12</td><td>نظام Dspace: المميزات والخصائص ومجالات الإفادة</td><td><a href="files/s1/pdf.12.pdf" class="download-btn">تحميل PDF</a></td></tr>
-                    <tr><td>الأسبوع 13</td><td>مراحل بناء المستودع الرقمي بنظام Dspace</td><td><a href="files/s1/pdf.13.pdf" class="download-btn">تحميل PDF</a></td></tr>
-                    <tr><td>الأسبوع 14</td><td>معايير تقييم نظم بناء المستودعات الرقمية</td><td><a href="files/s1/pdf.14.pdf" class="download-btn">تحميل PDF</a></td></tr>
-                    <tr><td>الأسبوع 15</td><td>مراجعة عامة لمادة المستودعات الرقمية</td><td><a href="files/s1/pdf.15.pdf" class="download-btn">تحميل PDF</a></td></tr>
+                    <tr><td>الأسبوع 11</td><td>مراحل بناء المستودع (Greenstone)</td><td><a href="pdf.11.pdf" class="download-btn">تحميل PDF</a></td></tr>
+                    <tr><td>الأسبوع 12</td><td>نظام Dspace المميزات والخصائص</td><td><a href="pdf.12.pdf" class="download-btn">تحميل PDF</a></td></tr>
+                    <tr><td>الأسبوع 13-15</td><td>مراحل بناء Dspace والمراجعة</td><td><a href="pdf.13.pdf" class="download-btn">تحميل PDF</a></td></tr>
                 </tbody>
             </table>
         </div>
 
         <div class="subject-card">
-            <div class="subject-title">الفصل الثاني: أنظمة الفهرسة المحوسبة (Computerized Indexing)</div>
+            <div class="subject-title">الفصل الثاني: أنظمة الفهرسة المحوسبة</div>
             <table>
-                <thead>
-                    <tr>
-                        <th width="15%">الأسبوع</th>
-                        <th width="65%">عنوان المحاضرة</th>
-                        <th width="20%">المادة العلمية</th>
-                    </tr>
-                </thead>
+                <thead><tr><th>الأسبوع</th><th>عنوان المحاضرة</th><th>المادة</th></tr></thead>
                 <tbody>
-                    <tr><td>الأسبوع 1</td><td>مفهوم الحوسبة في مؤسسات المعلومات ومبرراتها</td><td><a href="files/s2/pdf.1.pdf" class="download-btn">تحميل PDF</a></td></tr>
-                    <tr><td>الأسبوع 2</td><td>مستويات الحوسبة (الإلكترونية، الرقمية، الافتراضية)</td><td><a href="files/s2/pdf.2.pdf" class="download-btn">تحميل PDF</a></td></tr>
-                    <tr><td>الأسبوع 3</td><td>طرق التحول من النظام التقليدي إلى المحوسب</td><td><a href="files/s2/pdf.3.pdf" class="download-btn">تحميل PDF</a></td></tr>
-                    <tr><td>الأسبوع 4</td><td>مفهوم وأهمية الفهارس المحوسبة والتخطيط لها</td><td><a href="files/s2/pdf.4.pdf" class="download-btn">تحميل PDF</a></td></tr>
-                    <tr><td>الأسبوع 5</td><td>مزايا وعيوب الفهارس المحوسبة ومتطلباتها</td><td><a href="files/s2/pdf.5.pdf" class="download-btn">تحميل PDF</a></td></tr>
-                    <tr><td>الأسبوع 6</td><td>أنواع الفهارس المحوسبة (المصغرات، الموحد)</td><td><a href="files/s2/pdf.6.pdf" class="download-btn">تحميل PDF</a></td></tr>
-                    <tr><td>الأسبوع 7</td><td>أنواع الأنظمة المحوسبة (الجاهزة والمحلية)</td><td><a href="files/s2/pdf.7.pdf" class="download-btn">تحميل PDF</a></td></tr>
-                    <tr><td>الأسبوع 8</td><td>نظام التوثيق الإلكتروني (ISISMARC)</td><td><a href="files/s2/pdf.8.pdf" class="download-btn">تحميل PDF</a></td></tr>
-                    <tr><td>الأسبوع 9</td><td>نظام ABCD: المميزات والوظائف والمجالات</td><td><a href="files/s2/pdf.9.pdf" class="download-btn">تحميل PDF</a></td></tr>
-                    <tr><td>الأسبوع 10</td><td>نظام Genesis وتصميم محرك بحث المكتبات الرقمية</td><td><a href="files/s2/pdf.10.pdf" class="download-btn">تحميل PDF</a></td></tr>
-                    <tr><td>الأسبوع 11</td><td>تطبيقات عملية على نظام Genesis</td><td><a href="files/s2/pdf.11.pdf" class="download-btn">تحميل PDF</a></td></tr>
-                    <tr><td>الأسبوع 12</td><td>إدارة المحتوى في الأنظمة المحوسبة</td><td><a href="files/s2/pdf.12.pdf" class="download-btn">تحميل PDF</a></td></tr>
-                    <tr><td>الأسبوع 13</td><td>ضبط الجودة والمعايير في الفهرسة المحوسبة</td><td><a href="files/s2/pdf.14.pdf" class="download-btn">تحميل PDF</a></td></tr>
-                    <tr><td>الأسبوع 14</td><td>الاتجاهات الحديثة في الفهرسة والبحث</td><td><a href="files/s2/pdf.14.pdf" class="download-btn">تحميل PDF</a></td></tr>
-                    <tr><td>الأسبوع 15</td><td>الفهارس المتاحة على الخط المباشر (OPAC)</td><td><a href="files/s2/pdf.15.pdf" class="download-btn">تحميل PDF</a></td></tr>
+                    <tr><td>1-10</td><td>مفاهيم الحوسبة ونظام ABCD</td><td><a href="pdf.s2.1.pdf" class="download-btn">تحميل PDF</a></td></tr>
+                    <tr><td>11-15</td><td>نظام Genesis والبحث (OPAC)</td><td><a href="pdf.s2.11.pdf" class="download-btn">تحميل PDF</a></td></tr>
                 </tbody>
             </table>
         </div>
 
+        <div class="subject-card">
+            <div class="subject-title">📝 بنك الأسئلة التفاعلي (10 أسئلة هامة)</div>
+            
+            <div class="quiz-item">
+                <p><strong>س1: ما هو الهدف الأساسي من إنشاء المستودعات الرقمية الجامعية؟</strong></p>
+                <button class="download-btn" onclick="this.nextElementSibling.style.display='block'">إظهار الإجابة</button>
+                <p class="ans">الإجابة: تجميع وحفظ وإتاحة النتاج العلمي والفكري للجامعة وزيادة وضوحه عالمياً.</p>
+            </div>
+
+            <div class="quiz-item">
+                <p><strong>س2: هل نظام Greenstone يتطلب رسوم ترخيص سنوية؟</strong></p>
+                <button class="download-btn" onclick="this.nextElementSibling.style.display='block'">إظهار الإجابة</button>
+                <p class="ans">الإجابة: لا، هو نظام مفتوح المصدر (Open Source) متاح مجاناً.</p>
+            </div>
+
+            <div class="quiz-item">
+                <p><strong>س3: ما هي وظيفة نظام ABCD الأساسية؟</strong></p>
+                <button class="download-btn" onclick="this.nextElementSibling.style.display='block'">إظهار الإجابة</button>
+                <p class="ans">الإجابة: إدارة محتوى المكتبات والمراكز الوثائقية بشكل متكامل وقابل للتخصيص.</p>
+            </div>
+
+            <p style="text-align: center; color: #666; font-size: 12px;">(ملاحظة: اضغط على زر الإجابة للتأكد من معلوماتك)</p>
+        </div>
     </div>
 </div>
 
-<div class="footer">
-    جميع الحقوق محفوظة للأستاذ محمود عبد الله عطية © 2026<br>
-    الجامعة التقنية الوسطى - معهد الإدارة الرصافة
-</div>
+<div class="footer">جميع الحقوق محفوظة للأستاذ محمود عبد الله عطية © 2026</div>
 
 </body>
 </html>
